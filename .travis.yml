@@ -13,5 +13,5 @@ before_script:
 
 script:
   - docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
-  - travis_wait 40 docker buildx build --platform linux/amd64,linux/arm64 -t odidev/docker-curator:$TRAVIS_TAG -t odidev/docker-curator:latest --push .;
+  - travis_wait 40 docker buildx build --platform linux/amd64,linux/arm64 -t abhishek138/docker-curator:$TRAVIS_TAG -t abhishek138/docker-curator:latest --push .;
     
